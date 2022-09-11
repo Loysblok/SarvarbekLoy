@@ -6,7 +6,7 @@ const bot = mineflayer.createBot({
   host:'ir.skyblock.uz',
   version: 1.17,
   // port: 57285,
-  username: 'Sarvarbek_miner'    // botti nikini yozasiz
+  username: 'Sarvarbek_miner2'    // botti nikini yozasiz
  })
  
  let continue_digging = true; 
@@ -17,12 +17,12 @@ bot.once("spawn", () => {
 })
 
  bot.on("spawn", () => {
-   bot.chat("/is go");    //faqat /is sethome qisez yoqin
+   bot.chat("/is warp nether2");    //faqat /is sethome qisez yoqin
 })
 
 bot.on('chat', (username, message) => {
   if (username == 'SarvarbekUZB')
-  if (message == 'botmine') {
+  if (message == 'botmine2') {
     continue_digging=true;
     dig()
   }
@@ -30,7 +30,7 @@ bot.on('chat', (username, message) => {
 
 bot.on('chat', (username, message) => {
     if (username == 'Phantom_')
-  if (message == 'botmine') {      // dignmadur
+  if (message == 'botmine2') {      // dignmadur
     continue_digging=true;
     dig()  
   }
